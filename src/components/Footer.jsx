@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div
       className=" mt-80
-    h-full  bg-gray-200 w-full p-24 flex  flex-col "
+    h-full  bg-gray-200 w-full p-24 flex  flex-col items-center justify-center "
     >
       <div className="flex gap-64 w-[1216px] justify-center ">
         <div className="  ">
