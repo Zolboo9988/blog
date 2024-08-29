@@ -1,6 +1,13 @@
 import React from "react";
+import Holboo from "@/components/Holboo";
 
-export const Blog = () => {
-  return <div>Blog</div>;
-};
-export default Blog;
+export default async function Blog() {
+  const result = await fetch("https://dev.to/api/articles");
+  const objResult = await result.json();
+
+  return (
+    <div>
+      <Holboo posts={objResult} />
+    </div>
+  );
+}

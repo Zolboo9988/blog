@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Card } from "./Card";
 import { useState } from "react";
 
-export const AllPlog = ({ posts }) => {
+export const Holboo = ({ posts }) => {
   const [visiblePosts, setVisiblePosts] = useState(9);
 
   const loadMorePosts = () => {
@@ -13,25 +13,6 @@ export const AllPlog = ({ posts }) => {
 
   return (
     <>
-      <div>
-        <br />
-        <div className="text-2xl font-semibold mt-8 mr-[1150px]">
-          All Plog Posts
-        </div>
-        <br />
-        <div className="flex justify-between">
-          <div className="flex gap-4">
-            <div className="text-orange-400">All</div>
-            <div>Design</div>
-            <div>Travel</div>
-            <div>Fashion</div>
-            <div>Technology</div>
-            <div>Branding</div>
-          </div>
-          <div className="mr-6">View All</div>
-        </div>
-      </div>
-      <br />
       <div className="flex flex-wrap w-[1296px] overflow-auto mb-[70px] gap-[145px]">
         {posts
           .slice(0, visiblePosts)

@@ -31,22 +31,26 @@ const cards = [
 export const Trending = () => {
   return (
     <>
-      <div className="text-2xl font-semibold">Trending</div>
-      <br />
-      <div className="flex gap-4 w-full ">
-        {cards.map(({ image, chip, title }, index) => {
-          return (
-            <div key={index} className="relative w-[312px] h-[320px] ">
-              <img src={image} alt="" />
-              <div className="absolute bottom-2  text-white left-4">
-                <div className="mb-8 w-[86px] h-[28px] rounded-md p-2  text-xs font-semibolds bg-blue-600">
-                  {chip}
+      <div className="flex flex-col justify-center items-center text-center">
+        <div className="text-2xl font-semibold flex text-start mr-[1150px] ">
+          Trending
+        </div>
+        <br />
+        <div className="flex gap-4 text-start">
+          {cards.map(({ image, chip, title }, index) => {
+            return (
+              <div key={index} className="relative w-[312px] h-[320px] ">
+                <img src={image} alt="" />
+                <div className="absolute bottom-2  text-white left-4">
+                  <div className="mb-8 w-[86px] h-[28px] rounded-md p-2  text-xs font-semibolds bg-blue-600">
+                    {chip}
+                  </div>
+                  <div>{title}</div>
                 </div>
-                <div>{title}</div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </>
   );

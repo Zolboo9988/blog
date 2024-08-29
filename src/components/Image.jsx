@@ -23,8 +23,8 @@ export const Image = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end mt-4 gap-4">
-        <button className=" w-10 h-10 border-2 flex items-center justify-center rounded-md">
+      <div className="flex justify-end mt-4 ml-[1100px] gap-4">
+        <button className=" w-10 h-10 border-2 flex items-center justify-center rounded-md ">
           {" "}
           <MdOutlineArrowBackIos />
         </button>

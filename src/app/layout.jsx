@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
-import { Image } from "@/components/Image";
 import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,8 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="flex gap-[100px] flex-col justify-center items-center">
-          <div className=" w-[1216px]">
+        <div className="flex gap-[100px] flex-col justify-center  w-full">
+          <div className="  flex  flex-col justify-center items-center  ">
             <Header />
             <br />
             {children}
