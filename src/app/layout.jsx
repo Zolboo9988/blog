@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
           <div className="  flex  flex-col justify-center items-center  ">
             <Header />
             <br />
+
             {children}
             <Footer />
           </div>
